@@ -67,3 +67,10 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	@else if $media == s1
 		@media only screen and (max-width: 768px)
 			@content
+//rotate
+@mixin transition($what)
+	-moz-transition: $what
+	-o-transition: $what
+	-webkit-transition: $what
+	-ms-transition: $what
+	transition: $what
